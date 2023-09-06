@@ -25,8 +25,6 @@ return {
 
   -- change some telescope options and a keymap to browse plugin files
 
-
-
   -- add tsserver and setup with typescript.nvim instead of lspconfig
   {
     "neovim/nvim-lspconfig",
@@ -49,41 +47,6 @@ return {
         neocmake = {},
         -- tsserver will be automatically installed with mason and loaded with lspconfig
         tsserver = {},
-        clangd = {
-          keys = {
-            { "<leader>cR", "<cmd>ClangdSwitchSourceHeader<cr>", desc = "Switch Source/Header (C/C++)" },
-          },
-          root_dir = function(fname)
-            return require("lspconfig.util").root_pattern(
-              "Makefile",
-              "configure.ac",
-              "configure.in",
-              "config.h.in",
-              "meson.build",
-              "meson_options.txt",
-              "build.ninja"
-            )(fname) or require("lspconfig.util").root_pattern("compile_commands.json", "compile_flags.txt")(
-              fname
-            ) or require("lspconfig.util").find_git_ancestor(fname)
-          end,
-          capabilities = {
-            offsetEncoding = { "utf-16" },
-          },
-          cmd = {
-            "clangd",
-            "--background-index",
-            "--clang-tidy",
-            "--header-insertion=iwyu",
-            "--completion-style=detailed",
-            "--function-arg-placeholders",
-            "--fallback-style=llvm",
-          },
-          init_options = {
-            usePlaceholders = true,
-            completeUnimported = true,
-            clangdFileStatus = true,
-          },
-        },
       },
       -- you can do any additional lsp server setup here
       -- return true if you don't want this server to be setup with lspconfig
@@ -96,7 +59,6 @@ return {
         end,
         -- Specify * to use this function as a fallback for any server
         -- ["*"] = function(server, opts) end,
-       
       },
     },
   },
@@ -106,7 +68,6 @@ return {
   { import = "lazyvim.plugins.extras.lang.typescript" },
 
   -- add more treesitter parsers
-
 
   -- since `vim.tbl_deep_extend`, can only merge tables and not lists, the code above
   -- would overwrite `ensure_installed` with the new value.
@@ -146,9 +107,9 @@ return {
         "stylua",
         "shellcheck",
         "shfmt",
-        "flake8", 
+        "flake8",
         "pyright",
-        "clangd"
+        "clangd",
       },
     },
   },
@@ -163,5 +124,4 @@ return {
     end,
   },
   -- then: setup supertab in cmp
-
 }

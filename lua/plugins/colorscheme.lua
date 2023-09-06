@@ -87,6 +87,13 @@ return {{
             highlights["@lsp.type.namespace"] = {
                 link = "@namespace"
             }
+            highlights["@lsp.type.class"] = {
+               fg="#FF4500"
+            }
+
+            highlights["@type.builtin"] = {
+               fg="#F08080"
+            }
 
             highlights["@lsp.type.namespace.go"] = {
                 fg = "#00ae9d",
@@ -103,6 +110,15 @@ return {{
             highlights["@lsp.type.parameter"] = {
                 fg = "#ffe600"
 
+            }
+            highlights["@lsp.typemod.type.defaultLibrary"] = {
+                fg = "#F0E68C"
+            }
+            highlights["@lsp.typemod.function.defaultLibrary"] = {
+                fg = "#00bfff"
+            }
+            highlights["@number"] = {
+                fg = "#fafad2"
             }
             highlights.Function = {
                 fg = "#f58220",
