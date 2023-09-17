@@ -77,7 +77,7 @@ return {
           fg = "#00ae9d",
         }
         highlights["@namespace"] = {
-          fg = "#ef4136",
+          fg = "#ff00ff",
           style = {
             bold = true,
           },
@@ -88,9 +88,14 @@ return {
         highlights["@lsp.type.class"] = {
           fg = "#FF4500",
         }
-
+        highlights["@type.qualifier"] = {
+          fg = "#00bfff",
+        }
+        highlights["@operator"] = {
+          fg = "#3cb371",
+        }
         highlights["@type.builtin"] = {
-          fg = "#F08080",
+          fg = "#00ffff",
         }
 
         highlights["@lsp.type.namespace.go"] = {
@@ -98,6 +103,9 @@ return {
         }
         highlights["@parameter.builtin"] = {
           fg = "#ffe600",
+        }
+        highlights["@lsp.type.decorator.rust"] = {
+          fg = "#fcaf17",
         }
         highlights["@lsp.type.typeparameter"] = {
           fg = "#d71345",
@@ -108,8 +116,14 @@ return {
         highlights["@lsp.type.parameter"] = {
           fg = "#ffe600",
         }
+        highlights["@lsp.type.macro.cuda"] = {
+          fg = "#ed1941",
+        }
         highlights["@lsp.type.type"] = {
           fg = "#fab27b",
+        }
+        highlights["@lsp.type.type.go"] = {
+          fg = "#33a3dc",
         }
         highlights["@lsp.typemod.type.defaultLibrary"] = {
           fg = "#F08080",
