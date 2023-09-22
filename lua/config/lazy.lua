@@ -14,7 +14,6 @@ require("lazy").setup({
     { import = "lazyvim.plugins.extras.coding.copilot" },
     { import = "lazyvim.plugins.extras.editor.mini-files" },
     { import = "lazyvim.plugins.extras.lang.go" },
-    { import = "lazyvim.plugins.extras.dap.core" },
     { import = "lazyvim.plugins.extras.lang.docker" },
     { import = "lazyvim.plugins.extras.ui.edgy" },
     { import = "lazyvim.plugins.extras.lang.cmake" },

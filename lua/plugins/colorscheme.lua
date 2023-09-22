@@ -53,7 +53,7 @@ return {
         }
 
         highlights["@lsp.type.function"] = {
-          fg = "#f47920",
+          fg = "#ffa500",
           style = {
             bold = true,
           },
@@ -91,8 +91,8 @@ return {
         highlights["@type.qualifier"] = {
           fg = "#00bfff",
         }
-        highlights["@operator"] = {
-          fg = "#3cb371",
+        highlights["@lsp.type.operator"] = {
+          fg = "#45b97c",
         }
         highlights["@type.builtin"] = {
           fg = "#00ffff",
@@ -116,11 +116,15 @@ return {
         highlights["@lsp.type.parameter"] = {
           fg = "#ffe600",
         }
+        highlights["@conditional"] = {
+          fg = "#ff1493",
+        }
+
         highlights["@lsp.type.macro.cuda"] = {
           fg = "#ed1941",
         }
         highlights["@lsp.type.type"] = {
-          fg = "#fab27b",
+          fg = "#dda0dd",
         }
         highlights["@lsp.type.type.go"] = {
           fg = "#33a3dc",
