@@ -59,7 +59,7 @@ return {
           },
         }
         highlights["@lsp.type.macro"] = {
-          fg = "#fab27b",
+          fg = "#9b95c9",
         }
         highlights.Comment = {
           fg = "#007947",
@@ -92,7 +92,7 @@ return {
           fg = "#00bfff",
         }
         highlights["@lsp.type.operator"] = {
-          fg = "#45b97c",
+          fg = "#f8aba6",
         }
         highlights["@type.builtin"] = {
           fg = "#00ffff",
@@ -119,7 +119,9 @@ return {
         highlights["@conditional"] = {
           fg = "#ff1493",
         }
-
+        highlights["@repeat"] = {
+          fg = "#ef5b9c",
+        }
         highlights["@lsp.type.macro.cuda"] = {
           fg = "#ed1941",
         }
@@ -132,8 +134,11 @@ return {
         highlights["@lsp.typemod.type.defaultLibrary"] = {
           fg = "#F08080",
         }
+        highlights["@lsp.typemod.class.defaultLibrary"] = {
+          fg = "#ffce7b",
+        }
         highlights["@lsp.typemod.function.defaultLibrary"] = {
-          fg = "#00bfff",
+          fg = "#f3715c",
         }
         highlights["@number"] = {
           fg = "#fafad2",
