@@ -51,6 +51,9 @@ return {
           fg = "#afdfe4",
           style = {},
         }
+        highlights["@preproc"] = {
+          fg = "#fdb933",
+        }
 
         highlights["@lsp.type.function"] = {
           fg = "#ffa500",
@@ -94,10 +97,18 @@ return {
         highlights["@lsp.type.operator"] = {
           fg = "#f8aba6",
         }
-        highlights["@type.builtin"] = {
-          fg = "#00ffff",
+        highlights["@keyword.operator"] = {
+          fg = "#f8aba6",
         }
-
+        highlights["@type.builtin"] = {
+          fg = "#33a3dc",
+        }
+        highlights["@lsp.type.property"] = {
+          fg = "#00a6ac",
+        }
+        highlights["@storageclass"] = {
+          fg = "#c77eb5",
+        }
         highlights["@lsp.type.namespace.go"] = {
           fg = "#00ae9d",
         }
@@ -114,6 +125,9 @@ return {
           },
         }
         highlights["@lsp.type.parameter"] = {
+          fg = "#ffe600",
+        }
+        highlights["@parameter"] = {
           fg = "#ffe600",
         }
         highlights["@conditional"] = {
@@ -163,6 +177,9 @@ return {
             italic = false,
           },
         }
+        highlights["@keyword.function.python"] = {
+          fg = "#009ad6",
+        }
         highlights.Keyword = {
           fg = "#FF99CC",
 
@@ -189,10 +206,6 @@ return {
           fg = "#8552a1",
         }
 
-        -- highlights.illuminatedCurWord = {
-        --    fg = "#8552a1",
-        --    bg = "#fcf16e",
-        -- }
         highlights.IlluminatedWordText = {
           fg = "#8552a1",
           bg = "#fcf16e",
